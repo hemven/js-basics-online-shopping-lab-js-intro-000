@@ -59,12 +59,12 @@ function removeFromCart(item) {
     }
 
 function placeOrder(cardNumber) {
-    var freshArray = [];
+//    var freshArray = [];
     if (cardNumber === undefined) {
       return "Sorry, we don't have a credit card on file for you."
     } else {
       return `Your total cost is $${total()}, which will be charged to the card ${cardNumber}.`
-    setCart(freshArray)
+    setCart([])
   //  cart.splice(0, cart.length)
   }
   //return cart
